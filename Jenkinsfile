@@ -1,8 +1,6 @@
 node
 {
-  stages
-  {
-    parallel firstBranch: {
+  parallel firstBranch: {
       stage('git')
       {
         git 'https://github.com/pvarjun3/dynamicweb.git'
@@ -15,5 +13,5 @@ node
     },
       failFast : true
   }
-}
+
        
